@@ -51,7 +51,7 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
   - also contains the ingress-nginx configuration for the application
 
 
-## Implementation Progress
+## Implementation Steps
 
 I started by specifying the REST interface in the backend, for the frontend, see
 [./backend/src/main/resources/openapi.yaml](./backend/src/main/resources/openapi.yaml)
