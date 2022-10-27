@@ -27,6 +27,8 @@
     </properties>
 
     <dependencies>
+
+        <!-- required for org.openapitools:openapi-generator-maven-plugin  -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
