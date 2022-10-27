@@ -53,6 +53,8 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
 
 ## Implementation Steps
 
+### Backend Rest Interface
+
 One starting point is the REST interface in the backend, for the frontend, see
 [./backend/src/main/resources/openapi.yaml](./backend/src/main/resources/openapi.yaml)
 (that file can directly be copy-pasted into <https://editor.swagger.io/>).
