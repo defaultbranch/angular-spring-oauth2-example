@@ -5,7 +5,9 @@ Code Grant as specified in [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6
 for a (Kubernetes) web application consisting of a SPA frontend and a server backend.
 
 
-## Implementation Goals
+## Frontmatter
+
+### Implementation Goals
 
 - allow for a list of one or more external authentication providers
   (Keycloak, Azure Active Directory, …), configurable in the backend
@@ -19,21 +21,21 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
   exposed to the frontend application
 
 
-## Conceptual Goals
+### Conceptual Goals
 
 - get a clear view on the code it takes to implement the Authorization Code Grant flow,
 - provide a concise but working implementation that can be used for testing or debugging particular OAuth2 identity providers,
 - get a starting point for future, refined implementations.
 
 
-## Choice of Languages, Frameworks, and 3rd-Party Libraries
+### Choice of Languages, Frameworks, and 3rd-Party Libraries
 
 - Backend ("Client" in RFC 6749 terminology) is a Spring app written in Kotlin
 - Browser frontend ("Client" in RFC 6749 terminology) is an Angular app
 - Both will run as Kubernetes containers behind an Nginx load balancer
 
 
-## Project Structure
+### Project Structure
 
 - [./backend](./backend) contains one Maven project
   - providing the RFC 6749 `authorization_code` endpoint
@@ -47,3 +49,8 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
 - [./containers](./containers) contains the `Dockerfile`s required for containerization
 - [./devops](./devops) contains Kubernetes and Terraform code for roll-out
   - also contains the ingress-nginx configuration for the application
+
+
+## Implementation Progress
+
+I by specifying the REST interface in the backend, for the frontend, [./backend/src/main/resources/angular-spring-oauth2-example.openapi.yaml](./backend/src/main/resources/angular-spring-oauth2-example.openapi.yaml) (that file can directly be copy-pasted into <https://editor.swagger.io/>).
