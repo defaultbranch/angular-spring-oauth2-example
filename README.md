@@ -57,7 +57,7 @@ I started by specifying the REST interface in the backend, for the frontend, see
 [./backend/src/main/resources/openapi.yaml](./backend/src/main/resources/openapi.yaml)
 (that file can directly be copy-pasted into <https://editor.swagger.io/>).
 
-This provides two features:
+This defines two REST endpoints:
 
 - `/auth-providers` for a JSON document listing acceptable authorization endpoints,
   see "A" in <https://datatracker.ietf.org/doc/html/rfc6749#section-4.1>
