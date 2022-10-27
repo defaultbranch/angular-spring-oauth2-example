@@ -63,6 +63,9 @@ This defines two REST endpoints:
   see "A" in <https://datatracker.ietf.org/doc/html/rfc6749#section-4.1>
 - `/session-token` for a plain-text JWT token
 
+_Note:_ these endpoint paths are relative paths; when deployed behind a proxy,
+usually some prefix (like `/api/…`) will be applied.
+
 Next, `org.openapitools:openapi-generator-maven-plugin` was added to the Maven configuration
 in [./backend/pom.xml](./backend/pom.xml), configured to generate server interface code for
 the `openapi.yaml` mentioned above.
