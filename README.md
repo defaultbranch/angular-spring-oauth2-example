@@ -54,5 +54,5 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
 ## Implementation Progress
 
 I started by specifying the REST interface in the backend, for the frontend,
-[./backend/src/main/resources/angular-spring-oauth2-example.openapi.yaml](./backend/src/main/resources/angular-spring-oauth2-example.openapi.yaml)
+[./backend/src/main/resources/openapi.yaml](./backend/src/main/resources/openapi.yaml)
 (that file can directly be copy-pasted into <https://editor.swagger.io/>).
