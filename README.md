@@ -78,3 +78,17 @@ the `openapi.yaml` mentioned above.
 Another backend starting point is just the main routine. This can be achieved using
 <https://start.spring.io/>, and this introduces the current SpringBoot dependencies
 into the project (if you know what to opt for).
+
+
+### Next Steps
+
+These are the remaining TODOs, and the order might change:
+
+- another starting point: the frontend workspace (instead of a plain app)
+- implement the REST API
+- add a frontend App
+- implement the frontend app (how far? what not?)
+- implement the backend session handling (when to issue what token...)
+- configure some auth providers
+- configure roll-out (devops)
+- configure k8s ingress-nginx (which http url going where)
