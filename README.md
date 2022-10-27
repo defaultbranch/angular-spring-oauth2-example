@@ -61,8 +61,8 @@ One starting point is the REST interface in the backend, for the frontend, see
 
 This defines two REST endpoints:
 
-- `/auth-providers` for a JSON document listing acceptable authorization endpoints,
-  see "A" in <https://datatracker.ietf.org/doc/html/rfc6749#section-4.1>
+- `/auth-providers` for a JSON document listing acceptable authorization endpoints, see step "(A)"
+  in [RFC 6749, sec. 4.1](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1)
 - `/session-token` for a plain-text JWT token
 
 _Note:_ these endpoint paths are relative paths; when deployed behind a proxy,
