@@ -55,7 +55,7 @@ for a (Kubernetes) web application consisting of a SPA frontend and a server bac
 
 ### Backend Rest Interface
 
-One starting point is the REST interface in the backend, for the frontend, see
+One backend starting point is the public REST interface, for the frontend, see
 [./backend/src/main/resources/openapi.yaml](./backend/src/main/resources/openapi.yaml)
 (that file can directly be copy-pasted into <https://editor.swagger.io/>).
 
@@ -71,3 +71,10 @@ usually some prefix (like `/api/…`) will be applied.
 Next, `org.openapitools:openapi-generator-maven-plugin` was added to the Maven configuration
 in [./backend/pom.xml](./backend/pom.xml), configured to generate server interface code for
 the `openapi.yaml` mentioned above.
+
+
+### Spring Boot Backend
+
+Another backend starting point is just the main routine. This can be achieved using
+<https://start.spring.io/>, and this introduces the current SpringBoot dependencies
+into the project (if you know what to opt for).
